@@ -16,10 +16,11 @@ class handDetector():
                 if draw:    
                     self.mpdraw.draw_landmarks(img,handlm,self.mpHands.HAND_CONNECTIONS)
     
-    def handPosition(self,img,handlm,handNo=0,draw=True):
+    def handPosition(self,img,handNo=0,draw=True):
         lmList=[]
         h,w,c=img.shape
         if self.results.multi_hand_landmarks:
+            handlm=self.results.multi_hand_landmarks[handNo]
             for id,lm in enumerate(handlm.landmark):
                 x,y=int(lm.x*w), int(lm.y*h)
                 print(x,'\t',y)
@@ -33,7 +34,7 @@ def main():
     while True:
         success,img=cam.read()
         dec.findHands(img,True)
-        newlist=dec.handPosition()
+        newlist=dec.handPosition(img)
         cv2.putText(img,str(img.shape),(10,70),cv2.FONT_HERSHEY_SCRIPT_COMPLEX,1.5,(0,0,251),3)
         cv2.imshow("image",img)
         cv2.waitKey(1)
