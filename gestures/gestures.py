@@ -30,9 +30,13 @@ while True:
         if(4 in opened and len(opened)==1):
             print('Right')
         if(sum(opened)==3 and len(opened)==2):
-            print("Clicked")
-            t.sleep(3)
-            cv2.imwrite("photoedu.jpg",img)
-            break
+                t.sleep(3)
+                ss,pic=cam.read()
+                cv2.imshow('captured',pic)
+                cv2.waitKey(1)
+                cv2.imwrite("Photo.jpg",pic)
+                t.sleep(3)
+                cv2.destroyWindow('captured')
+                break
     cv2.imshow('img',img)
     cv2.waitKey(1)
