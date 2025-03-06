@@ -2,6 +2,12 @@ import cv2
 import numpy as np
 import handtracking as ht
 import time as t
+
+from flask import Flask
+from flask_socketio import SocketIO
+
+app=Flask(__name__)
+socket=SocketIO(app,cors_allowed_origins="*")
 def open_or_closed(landmarks):
     fingertips=[4,8,12,16,20]
     opened=[]
@@ -18,25 +24,28 @@ def open_or_closed(landmarks):
 cam=cv2.VideoCapture(0)
 detector=ht.handDetector(detectCon=0.7,trackCon=0.5)
 
-while True:
-    s,img=cam.read()
-    img=detector.findHands(img)
-    lmlist=detector.handPosition(img,draw=False)
-    opened=open_or_closed(lmlist)
-    finger_name=["thumb","index","middle","ring","little"]
-    if(len(opened)!=0):
-        if(1 in opened and len(opened)==1):
-            print('Left')
-        if(4 in opened and len(opened)==1):
-            print('Right')
-        if(sum(opened)==3 and len(opened)==2):
-                t.sleep(3)
-                ss,pic=cam.read()
-                cv2.imshow('captured',pic)
-                cv2.waitKey(1)
-                cv2.imwrite("Photo.jpg",pic)
-                t.sleep(3)
-                cv2.destroyWindow('captured')
-                break
-    cv2.imshow('img',img)
-    cv2.waitKey(1)
+def getGes():
+    while True:
+        s,img=cam.read()
+        img=detector.findHands(img)
+        lmlist=detector.handPosition(img,draw=False)
+        opened=open_or_closed(lmlist)
+        finger_name=["thumb","index","middle","ring","little"]
+        if(len(opened)!=0):
+            if(1 in opened and len(opened)==1):
+                print('Left')
+            if(4 in opened and len(opened)==1):
+                print('Right')
+            if(sum(opened)==3 and len(opened)==2):
+                    t.sleep(3)
+                    ss,pic=cam.read()
+                    cv2.imshow('captured',pic)
+                    cv2.waitKey(1)
+                    cv2.imwrite("Photo.jpg",pic)
+                    t.sleep(3)
+                    cv2.destroyWindow('captured')
+                    break
+        cv2.imshow('img',img)
+        cv2.waitKey(1)
+        
+getGes()
