@@ -1,4 +1,4 @@
-import Webcam from "react-webcam"
+import GestureDetect from "../components/gesturesDetect"
 import Header from "../components/header"
 import { useState } from "react"
 export default function TryOn()
@@ -13,7 +13,7 @@ export default function TryOn()
                 <h1 className="text-white font-bold text-2xl text-center my-auto">{gender}</h1>
             </div>
             </div>
-            <Webcam className="m-auto rounded-xl p-5"/>
+            <GestureDetect/>
         </div>
     )
 }

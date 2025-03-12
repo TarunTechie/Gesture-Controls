@@ -4,6 +4,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import TryOn from './pages/tryon.jsx'
 import Gender from './pages/gender.jsx'
+import Clothes from './pages/clothes.jsx'
 const Router = createBrowserRouter([
   {
     path: '/',
@@ -16,6 +17,10 @@ const Router = createBrowserRouter([
   {
     path: '/gender',
     element:<Gender/>
+  },
+  {
+    path: '/clothes',
+    element:<Clothes/>
   }
 ])
 createRoot(document.getElementById('root')).render(
