@@ -5,9 +5,10 @@ export default function App()
   return (
     <div>
       <img src="./images/homeBg.png" className="h-screen align-center m-auto" />
-      <Link to={'/camera'}  className="button">GO TO CAMERA</Link>
-      <Link to={'/gender'}  className="button">GO TO GENDER</Link>
-      <Link to={'/clothes'}  className="button">GO TO SELECTION</Link>
+      <Link to={'/camera'} > <button className="button"> CAMERA   </button> </Link>
+      <Link to={'/gender'} > <button className="button"> GENDER   </button> </Link>
+      <Link to={'/clothes'}><button className="button"> CLOTHES </button>   </Link>
+      <Link to={'/categories'}><button className="button"> CATEGORIES </button>   </Link>
     </div> 
   )
 }

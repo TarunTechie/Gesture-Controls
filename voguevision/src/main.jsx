@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import TryOn from './pages/tryon.jsx'
 import Gender from './pages/gender.jsx'
 import Clothes from './pages/clothes.jsx'
+import Categories from './pages/categories.jsx'
 const Router = createBrowserRouter([
   {
     path: '/',
@@ -21,6 +22,10 @@ const Router = createBrowserRouter([
   {
     path: '/clothes',
     element:<Clothes/>
+  },
+  {
+    path: "/categories",
+    element:<Categories/>
   }
 ])
 createRoot(document.getElementById('root')).render(
