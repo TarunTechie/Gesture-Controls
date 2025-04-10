@@ -1,5 +1,4 @@
 import Header from "../components/header"
-
 export default function Gender()
 {
     const Item = ({text,image,color}) => (
