@@ -1,13 +1,13 @@
 import Header from "../components/header";
-import {useContext, useState} from "react"
+import {useContext, useEffect, useState} from "react"
 import Loader from "../components/loader";
 import { paths } from "../constants/consts";
-import { Broadcast } from "../components/broadcaster";
+import { Broadcast} from "../components/broadcaster";
 export default function Categories()
 {
-    const [loading, setLoading] = useState(false)
     const [index, setIndex] = useState(0)
-    const{gesture,setGesture}=useContext(Broadcast)
+    const { gesture, setGesture} = useContext(Broadcast)
+    const [loading,setLoading]=useState(false)
     function changePic(direction)
     {
         let len = paths.length
@@ -34,6 +34,7 @@ export default function Categories()
             }
         }
     }
+    useEffect(()=>{changePic(gesture.gesture)},[gesture])
     return (
         loading?
             <Loader /> :
@@ -46,7 +47,8 @@ export default function Categories()
                         <img src={paths[index]} className="rounded-xl h-[60vh] w-auto m-auto p-2" />          
                     <button onClick={()=>{changePic("right")}}><img src="/icons/right.svg" className="h-20"/></button>
                     </div>
-                    <h1 className="text-center text-3xl text-white font-bold">{gesture}</h1>
+                    <h1 className="text-center text-3xl text-white font-bold">"CARS"</h1>
+                    
                 </div>
         </div>
     )

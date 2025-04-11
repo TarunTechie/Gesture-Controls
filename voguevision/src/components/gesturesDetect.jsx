@@ -1,21 +1,18 @@
 import Webcam from "react-webcam";
 import * as tf from "@tensorflow/tfjs"
 import * as model from "@tensorflow-models/handpose"
-import { useContext, useEffect, useRef, useState} from "react";
+import { useContext, useEffect, useRef} from "react";
 import { useNavigate } from "react-router-dom";
 
-import { Broadcast } from "./broadcaster";
+import { Broadcast} from "./broadcaster";
 import { Pose } from "../constants/pose";
-import Loader from "../components/loader"
 export default function GestureDetect()
 {
-    const{gesture,setGesture}=useContext(Broadcast)
-    const [loading, setLoading] = useState(true)
+    const { gesture, setGesture } = useContext(Broadcast)
     const nav=useNavigate()
     const webcamRef = useRef(null)
     const runModel = async () => {
         const net = await model.load()
-        setLoading(false)
         setInterval(()=>{detect(net)},5000)
     }
 
@@ -36,7 +33,7 @@ export default function GestureDetect()
                 console.log("hello")
                 const fingers = new Pose(hands[0].landmarks)
                 const detectedGesture = fingers.getGesture()
-                setGesture(detectedGesture)
+                setGesture({ gesture: detectedGesture, change:!gesture.change})
                 }
             }
             catch (error)
@@ -45,12 +42,10 @@ export default function GestureDetect()
             }
         }
     }
-    useEffect(()=>{runModel()},[])
+    useEffect(() => {runModel()},[])
     return (
         <div className="m-auto w-fit shadow shadow-fuchsia-300 rounded-2xl">
-            {loading?<Loader/>:(
                 <Webcam className="m-auto rounded-2xl" ref={webcamRef} mirrored={"user"} />
-            )}
         </div>
     )
 }
