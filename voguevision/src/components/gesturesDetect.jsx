@@ -4,15 +4,17 @@ import * as model from "@tensorflow-models/handpose"
 import { useContext, useEffect, useRef} from "react";
 import { useNavigate } from "react-router-dom";
 
-import { Broadcast} from "./broadcaster";
+import {Broadcast,Loading} from "./broadcaster";
 import { Pose } from "../constants/pose";
 export default function GestureDetect()
 {
     const { gesture, setGesture } = useContext(Broadcast)
+    const {loading,setLoading}=useContext(Loading)
     const nav=useNavigate()
     const webcamRef = useRef(null)
     const runModel = async () => {
         const net = await model.load()
+        setLoading(false)
         setInterval(()=>{detect(net)},5000)
     }
 
@@ -45,7 +47,7 @@ export default function GestureDetect()
     useEffect(() => {runModel()},[])
     return (
         <div className="m-auto w-fit shadow shadow-fuchsia-300 rounded-2xl">
-                <Webcam className="m-auto rounded-2xl" ref={webcamRef} mirrored={"user"} />
+                <Webcam className={`m-auto rounded-2xl ${loading?"hidden":""}`} ref={webcamRef} mirrored={"user"} />
         </div>
     )
 }
