@@ -1,14 +1,7 @@
-Gestures Contorls using Mediapipe and python
-
-
 ## Run Locally
-
-Clone the project
 
 Gestures Contorls using Mediapipe and python
 
-
-## Run Locally
 
 Clone the project
 
