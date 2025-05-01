@@ -50,7 +50,7 @@ export default function Clothes()
                                 </div>
                                 <div className="flex justify-around text-white font-bold bg-white/30 p-1 m-1 rounded-full w-full">
                                     <span className="flex"><h2 className="font-light">Size:</h2><h1>{"M"}</h1></span>
-                                    <span className="flex"><h2 className="font-light">Color:</h2><h1>{"White"}</h1></span>
+                                    <span className="flex"><h2 className="font-light">Color:</h2><h1>{"Navy and Red"}</h1></span>
                                 </div>
                                 <button className="flex text-white font-semibold border-2 border-white p-2 rounded-full items-center m-auto">
                                     <img src="/icons/thumbsUp.svg" className="h-6" />ADD TO CART

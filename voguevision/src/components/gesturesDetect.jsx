@@ -15,7 +15,7 @@ export default function GestureDetect()
     const runModel = async () => {
         const net = await model.load()
         setLoading(false)
-        setInterval(()=>{detect(net)},5000)
+        setInterval(()=>{detect(net)},3000)
     }
 
     async function detect (net)  {
