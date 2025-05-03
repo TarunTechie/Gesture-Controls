@@ -1,11 +1,14 @@
-import { StrictMode } from 'react'
+import { StrictMode, useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import {Broadcaster} from './components/broadcaster.jsx'
+
+import App from './App.jsx'
 import TryOn from './pages/tryon.jsx'
 import Gender from './pages/gender.jsx'
 import Clothes from './pages/clothes.jsx'
-import Model from './pages/model.jsx'
+import Categories from './pages/categories.jsx'
+import GestureDetect from './components/gesturesDetect.jsx'
 const Router = createBrowserRouter([
   {
     path: '/',
@@ -24,12 +27,15 @@ const Router = createBrowserRouter([
     element:<Clothes/>
   },
   {
-    path:"/tryit",
-    element:<Model/>
-  }
+    path: "/categories",
+    element:<Categories/>
+  },
 ])
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Broadcaster>
     <RouterProvider router={Router} />
+    </Broadcaster>
   </StrictMode>,
 )
