@@ -35,7 +35,7 @@ export default function GestureDetect()
                 console.log("hello")
                 const fingers = new Pose(hands[0].landmarks)
                 const detectedGesture = fingers.getGesture()
-                setGesture({ gesture: detectedGesture, change:!gesture.change})
+                setGesture({ gesture: detectedGesture, change:!gesture.change,hands:true})
                 }
             }
             catch (error)
