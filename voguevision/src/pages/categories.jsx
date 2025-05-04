@@ -8,33 +8,44 @@ export default function Categories()
     const [index, setIndex] = useState(0)
     const { gesture, setGesture} = useContext(Broadcast)
     const {loading,setLoading}=useContext(Loading)
-    function changePic(direction)
+    function changePic(gesture)
     {
+        console.log(gesture)
         let len = paths.length
-        if (direction === "left")
+        if (gesture.gesture===null)
         {
-            if (index === 0)
-            {
-                setIndex(len-1)
-            }
-            else
-            {
-                setIndex((index)=>index-1)    
-            }
+            if (gesture.direction === "left")
+                {
+                    if (index === 0)
+                    {
+                        setIndex(len-1)
+                    }
+                    else
+                    {
+                        setIndex((index)=>index-1)    
+                    }
+                }
+                if (gesture.direction === "right")
+                {
+                    if (index === len - 1)
+                    {
+                        setIndex(0)
+                    }
+                    else
+                    {
+                        setIndex((index)=>index+1)
+                    }
+                }
         }
-        if (direction === "right")
+        else
         {
-            if (index === len - 1)
+            if (gesture.gesture == "thumbs_up")
             {
-                setIndex(0)
-            }
-            else
-            {
-                setIndex((index)=>index+1)
+                console.log('thumbs up')
             }
         }
     }
-    useEffect(()=>{changePic(gesture.gesture)},[gesture])
+    useEffect(()=>{changePic(gesture)},[gesture])
     return (
         <div>
         <Header heading={"Categories"}/>

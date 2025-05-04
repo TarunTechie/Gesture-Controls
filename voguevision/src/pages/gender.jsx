@@ -18,13 +18,13 @@ export default function Gender()
         setTimeout(()=>{setLoading(false)},3000)
     },[])
     useEffect(()=>{
-        if(!loading){if(gesture.gesture=='left')
+        if(!loading){if(gesture.direction=='left')
         {
             console.log("Set female")
             localStorage.setItem('gender', 'f')
             nav('/categories')            
         }
-        if(gesture.gesture=='right')
+        if(gesture.direction=='right')
         {
             console.log("Set male")
             localStorage.setItem('gender', 'm')
