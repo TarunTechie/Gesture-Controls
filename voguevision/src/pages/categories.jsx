@@ -47,7 +47,6 @@ export default function Categories()
                     <button onClick={()=>{changePic("right")}}><img src="/icons/right.svg" className="h-20"/></button>
                     </div>
                     <h1 className="text-center text-3xl text-white font-bold">SHIRTS</h1>
-                    
         </div>}
         </div>
     )

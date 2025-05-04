@@ -1,3 +1,4 @@
+import * as fp from 'fingerpose'
 export class Pose
 {
     constructor(landmarks)
@@ -6,19 +7,32 @@ export class Pose
     }
     getGesture()
     {
-        const direction=getDirection(this.landmarks)
-        return direction
+        const direction = getDirection(this.landmarks)
+        const gesture=getGesture(this.landmarks)
+        return {"direction":direction,"gesture":gesture}
     }
 }
 
 function getDirection(landmarks)
 {
-    if (landmarks[4][0] < landmarks[20][0])
+    console.log("this gets the direction")
+        if (landmarks[4][0] < landmarks[0][0])
+        {
+            return("left")
+        }
+        if (landmarks[4][0] > landmarks[0][0])
+        {
+            return("right")
+        }
+}
+
+function getGesture(landmarks)
+{
+    console.log("this gets the gesture")
+    const ge = new fp.GestureEstimator([fp.Gestures.VictoryGesture, fp.Gestures.ThumbsUpGesture])
+    const gesture = ge.estimate(landmarks, 7.5)
+    if (gesture.gestures.length > 0)
     {
-        return("left")
-    }
-    if (landmarks[4][0] > landmarks[20][0])
-    {
-        return("right")
+        console.log(gesture.gestures)
     }
 }
