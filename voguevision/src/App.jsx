@@ -23,7 +23,7 @@ export default function App()
     <div>
       <Header heading={"Hello World"}/>
       <img src="./images/homeBg.png" className="h-screen align-center m-auto" />
-      <Link to={'/camera'} > <button className="button"> CAMERA   </button> </Link>
+      <Link to={'/capture'} > <button className="button"> CAMERA   </button> </Link>
       <Link to={'/gender'} > <button className="button"> GENDER   </button> </Link>
       <Link to={'/clothes'}><button className="button"> CLOTHES </button>   </Link>
       <Link to={'/categories'}><button className="button"> CATEGORIES </button>   </Link>

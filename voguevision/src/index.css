@@ -19,3 +19,85 @@
 {
   border: 0.5px solid white;
 }
+
+
+
+
+.eye-lid {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 9px 0 2px rgba(0, 0, 0, 0);
+  width: 150px;
+  height: 150px;
+}
+
+.eye {
+  background-color: #FFC1DA;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: eye 5s infinite;
+  transform: rotate(90deg);
+  position: relative;
+}
+
+.cornea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #3A0519;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: eye-color 5s infinite;
+}
+
+.white-pupil {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  background-color: #fffcf4;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.eye-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+@keyframes eye {
+  12%, 25% {
+    width: 100px;
+    height: 110px;
+  }
+  37%, 50% {
+    width: 60px;
+    height: 130px;
+  }
+  63%, 75% {
+    width: 100px;
+    height: 103px;
+  }
+  87% {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes eye-color {
+  63%, 75% {
+    background-color:#A53860;
+  }
+}

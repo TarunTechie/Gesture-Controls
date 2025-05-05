@@ -15,11 +15,11 @@ export class Pose
 
 function getDirection(landmarks)
 {
-        if (landmarks[4][0] < landmarks[0][0])
+        if (landmarks[4][0] < landmarks[20][0])
         {
             return("left")
         }
-        if (landmarks[4][0] > landmarks[0][0])
+        if (landmarks[4][0] > landmarks[20][0])
         {
             return("right")
         }
@@ -27,7 +27,7 @@ function getDirection(landmarks)
 
 function getGesture(landmarks)
 {
-    const ge = new fp.GestureEstimator([fp.Gestures.VictoryGesture, fp.Gestures.ThumbsUpGesture])
+    const ge = new fp.GestureEstimator([fp.Gestures.ThumbsUpGesture])
     const gesture = ge.estimate(landmarks, 7.5)
     if (gesture.gestures.length > 0)
     {

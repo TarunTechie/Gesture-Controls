@@ -3,11 +3,13 @@ import {useContext, useEffect, useState} from "react"
 import Loader from "../components/loader";
 import { paths } from "../constants/consts";
 import { Broadcast , Loading} from "../components/broadcaster";
+import { useNavigate } from "react-router-dom";
 export default function Categories()
 {
     const [index, setIndex] = useState(0)
     const { gesture, setGesture} = useContext(Broadcast)
-    const {loading,setLoading}=useContext(Loading)
+    const { loading, setLoading } = useContext(Loading)
+    const nav=useNavigate()
     function changePic(gesture)
     {
         console.log(gesture)
@@ -42,6 +44,8 @@ export default function Categories()
             if (gesture.gesture == "thumbs_up")
             {
                 console.log('thumbs up')
+                setGesture(gesture=>({...gesture,gesture:null,direction:null}))
+                nav('/clothes')
             }
         }
     }

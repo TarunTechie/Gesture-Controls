@@ -1,13 +1,15 @@
 import Header from "../components/header";
 import {useContext, useEffect, useState} from "react"
 import Loader from "../components/loader";
-import { paths } from "../constants/consts";
+import { paths,collections } from "../constants/consts";
 import { Broadcast, Loading } from "../components/broadcaster";
+import { useNavigate } from "react-router-dom";
 export default function Clothes()
 {
     const [index, setIndex] = useState(0)
     const { gesture, setGesture} = useContext(Broadcast)
-    const {loading,setLoading}=useContext(Loading)
+    const { loading, setLoading } = useContext(Loading)
+    const nav=useNavigate()
     function changePic(gesture)
     {
         console.log(gesture)
@@ -42,6 +44,8 @@ export default function Clothes()
             if (gesture.gesture == "thumbs_up")
             {
                 console.log('thumbs up')
+                setGesture(gesture=>({...gesture,gesture:null,direction:null}))
+                nav('/capture')
             }
         }
     }
@@ -56,7 +60,7 @@ export default function Clothes()
                 <div className="flex justify-between">
                     <button onClick={() => { changePic("left") }}><img src="/icons/left.svg" className="h-20" /></button>
                     <div className="w-[30vw]">
-                        <img src={paths[index]} className="rounded-xl h-[50vh] w-auto m-auto p-2" />
+                        <img src={collections[index].path} className="rounded-xl h-[50vh] w-auto m-auto p-2" />
                             <div id="dressDetails" className="bg-[#7E8ABA]/80 border-1 border-white backdrop-blur-3xl p-4 rounded-2xl">
                                 <div className="flex justify-between font-bold text-white">
                                     <h1>Basic T-Shirt</h1>

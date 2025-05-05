@@ -4,19 +4,19 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import {Broadcaster} from './components/broadcaster.jsx'
 
 import App from './App.jsx'
-import TryOn from './pages/tryon.jsx'
+import Capture from './pages/capture.jsx'
 import Gender from './pages/gender.jsx'
 import Clothes from './pages/clothes.jsx'
 import Categories from './pages/categories.jsx'
-import GestureDetect from './components/gesturesDetect.jsx'
+import TryOn from './pages/tryon.jsx'
 const Router = createBrowserRouter([
   {
     path: '/',
     element:<App/>
   },
   {
-    path: '/camera',
-    element:<TryOn/>
+    path: '/capture',
+    element:<Capture/>
   },
   {
     path: '/gender',
@@ -30,6 +30,10 @@ const Router = createBrowserRouter([
     path: "/categories",
     element:<Categories/>
   },
+  {
+    path: "/tryon",
+    element:<TryOn/>
+  }
 ])
 
 createRoot(document.getElementById('root')).render(

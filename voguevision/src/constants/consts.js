@@ -3,9 +3,27 @@ export const paths = ['/images/carousel/image_1.jpg','/images/carousel/image_2.j
 
 export const collections = [
     {
-        path: "public/test_images/cloth.jpg",
+        id:"m_sh_01",
+        path: "/category_name/image_name.jpg",
         type: "top",
-        name: "shirt",
-        color:"blue"
+        category:"pants",
+        diplayName: "shirts",
+        color: "blue",
+        price:1000
     }
 ]
+
+export const WomenCollections = [
+    {
+        id:"m_sh_01",
+        path: "/category_name/image_name.jpg",
+        type: "top",
+        category:"pants",
+        diplayName: "shirts",
+        color: "blue",
+        price:1000
+    }
+]
+
+export const man=["pants","shirts"]
+export const woman=["pants","shirts","skirt","saree"]
