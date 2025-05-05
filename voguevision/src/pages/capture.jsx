@@ -4,10 +4,11 @@ import { Link } from "react-router-dom"
 import Webcam from "react-webcam"
 import { Broadcast } from "../components/broadcaster"
 import EyeAnimation from "../components/camAni"
+import { useNavigate } from "react-router-dom"
 export default function Capture()
 {
+    const nav=useNavigate()
     const camRef = useRef(null)
-    const [image, setImage] = useState()
     const [timer, setTimer] = useState(false)
     const [swap,setSwap]=useState(false)
     const { gesture, setGesture } = useContext(Broadcast)
@@ -17,9 +18,14 @@ export default function Capture()
         {
             setTimer(true)
             setSwap(true)
+            
             setInterval(() => {
                 setTimer(false)
             }, 3000)
+
+            setInterval(() => {
+                localStorage.setItem('photo',camRef.current.getScreenshot())
+            },5000)
         }
     },[gesture])
     return (
@@ -42,7 +48,7 @@ export default function Capture()
                 <span className="absolute inset-0 flex justify-center items-center z-10">
                     {timer?<EyeAnimation/>:null}
                 </span>
-                </div>
+            </div>
         </div>
     )
 }
