@@ -24,7 +24,8 @@ export default function Capture()
             }, 3000)
 
             setInterval(() => {
-                localStorage.setItem('photo',camRef.current.getScreenshot())
+                localStorage.setItem('photo', camRef.current.getScreenshot())
+                nav('/tryon')
             },5000)
         }
     },[gesture])
