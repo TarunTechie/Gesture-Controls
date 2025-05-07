@@ -1,7 +1,7 @@
 export const MenCollections = [
     {
       "id": "m_sh_01",
-      "path": "/male/tshirts/1.jpg",
+      "path": "collections/male/tshirts/1.jpg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Blue Cotton T-Shirt",
@@ -10,7 +10,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_02",
-      "path": "/male/tshirts/2.jpg",
+      "path": "collections/male/tshirts/2.jpg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Blue Cotton Crew-Neck T-Shirt",
@@ -19,7 +19,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_03",
-      "path": "/male/tshirts/3.jpg",
+      "path": "collections/male/tshirts/3.jpg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Red Cotton V-Neck T-Shirt",
@@ -28,7 +28,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_04",
-      "path": "/male/tshirts/4.jpg",
+      "path": "collections/male/tshirts/4.jpg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Red Graphic Print Cotton T-Shirt",
@@ -37,7 +37,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_05",
-      "path": "/male/tshirts/5.jpg",
+      "path": "collections/male/tshirts/5.jpg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Navy-Blue Geek Graphic Cotton T-Shirt",
@@ -46,7 +46,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_06",
-      "path": "/male/tshirts/6.jpg",
+      "path": "collections/male/tshirts/6.jpg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Black Graphic Cotton T-Shirt",
@@ -55,7 +55,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_07",
-      "path": "/male/tshirts/7.jpg",
+      "path": "collections/male/tshirts/7.jpg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Black Graphic Cotton T-Shirt",
@@ -64,7 +64,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_08",
-      "path": "/male/tshirts/8.jpeg",
+      "path": "collections/male/tshirts/8.jpeg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Black Graphic Cotton T-Shirt",
@@ -73,7 +73,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_09",
-      "path": "/male/tshirts/9.jpeg",
+      "path": "collections/male/tshirts/9.jpeg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Red World-Map Graphic Cotton T-Shirt",
@@ -82,7 +82,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_010",
-      "path": "/male/tshirts/10.jpg",
+      "path": "collections/male/tshirts/10.jpg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Grey Graphic Cotton T-Shirt",
@@ -91,7 +91,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_011",
-      "path": "/male/tshirts/11.jpg",
+      "path": "collections/male/tshirts/11.jpg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Peach Graphic Cotton T-Shirt",
@@ -100,7 +100,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_012",
-      "path": "/male/tshirts/12.jpg",
+      "path": "collections/male/tshirts/12.jpg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Green Graphic Cotton T-Shirt",
@@ -109,7 +109,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_013",
-      "path": "/male/tshirts/13.jpeg",
+      "path": "collections/male/tshirts/13.jpeg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Brown Graphic Cotton T-Shirt",
@@ -118,7 +118,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_014",
-      "path": "/male/tshirts/14.jpg",
+      "path": "collections/male/tshirts/14.jpg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Blue Graphic Cotton T-Shirt",
@@ -127,7 +127,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_015",
-      "path": "/male/tshirts/15.jpg",
+      "path": "collections/male/tshirts/15.jpg",
       "type": "tops",
       "category": "tshirt",
       "displayName": "Men Green Graphic Cotton T-Shirt",
@@ -136,7 +136,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_016",
-      "path": "/male/shorts/16.jpg",
+      "path": "collections/male/shorts/16.jpg",
       "type": "bottoms",
       "category": "shorts",
       "displayName": "Men Blue Denim Shorts",
@@ -145,7 +145,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_017",
-      "path": "/male/shorts/17.jpg",
+      "path": "collections/male/shorts/17.jpg",
       "type": "bottoms",
       "category": "shorts",
       "displayName": "Men Blue Denim Shorts",
@@ -154,7 +154,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_018",
-      "path": "/male/shorts/18.jpg",
+      "path": "collections/male/shorts/18.jpg",
       "type": "bottoms",
       "category": "shorts",
       "displayName": "Men Black Casual Shorts",
@@ -163,7 +163,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_019",
-      "path": "/male/shorts/19.jpg",
+      "path": "collections/male/shorts/19.jpg",
       "type": "bottoms",
       "category": "shorts",
       "displayName": "Men Green Casual Shorts",
@@ -172,7 +172,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_020",
-      "path": "/male/shorts/20.jpg",
+      "path": "collections/male/shorts/20.jpg",
       "type": "bottoms",
       "category": "shorts",
       "displayName": "Men Brown Casual Shorts",
@@ -181,7 +181,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_021",
-      "path": "/male/shorts/21.jpg",
+      "path": "collections/male/shorts/21.jpg",
       "type": "bottoms",
       "category": "shorts",
       "displayName": "Men Black Casual Shorts",
@@ -190,7 +190,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_022",
-      "path": "/male/shorts/22.jpeg",
+      "path": "collections/male/shorts/22.jpeg",
       "type": "bottoms",
       "category": "shorts",
       "displayName": "Men Beige Casual Shorts",
@@ -199,7 +199,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_023",
-      "path": "/male/shorts/23.jpeg",
+      "path": "collections/male/shorts/23.jpeg",
       "type": "bottoms",
       "category": "shorts",
       "displayName": "Men Grey Casual Shorts",
@@ -208,7 +208,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_024",
-      "path": "/male/shirts/24.jpg",
+      "path": "collections/male/shirts/24.jpg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Men Purple Cotton Shirt",
@@ -217,7 +217,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_025",
-      "path": "/male/shirts/25.jpg",
+      "path": "collections/male/shirts/25.jpg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Men Blue Cotton Shirt",
@@ -226,7 +226,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_026",
-      "path": "/male/shirts/26.jpg",
+      "path": "collections/male/shirts/26.jpg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Men Blue Cotton Shirt",
@@ -235,7 +235,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_027",
-      "path": "/male/shirts/27.jpg",
+      "path": "collections/male/shirts/27.jpg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Men Black Cotton Shirt",
@@ -244,7 +244,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_028",
-      "path": "/male/shirts/28.jpg",
+      "path": "collections/male/shirts/28.jpg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Men Purple Cotton Shirt",
@@ -253,7 +253,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_029",
-      "path": "/male/shirts/29.jpg",
+      "path": "collections/male/shirts/29.jpg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Men Lavender Cotton Shirt",
@@ -262,7 +262,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_030",
-      "path": "/male/shirts/30.jpg",
+      "path": "collections/male/shirts/30.jpg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Men Blue Cotton Shirt",
@@ -271,7 +271,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_031",
-      "path": "/male/shirts/31.jpg",
+      "path": "collections/male/shirts/31.jpg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Men White Cotton Shirt",
@@ -280,7 +280,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_032",
-      "path": "/male/shirts/32.jpg",
+      "path": "collections/male/shirts/32.jpg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Men Blue Cotton Shirt",
@@ -289,7 +289,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_033",
-      "path": "/male/shirts/33.jpg",
+      "path": "collections/male/shirts/33.jpg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Men Blue Cotton Shirt",
@@ -298,7 +298,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_034",
-      "path": "/male/pyjamas/34.jpg",
+      "path": "collections/male/pyjamas/34.jpg",
       "type": "bottoms",
       "category": "pyjamas",
       "displayName": "Men Blue Checkered Pyjamas",
@@ -307,7 +307,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_035",
-      "path": "/male/pyjamas/35.jpg",
+      "path": "collections/male/pyjamas/35.jpg",
       "type": "bottoms",
       "category": "pyjamas",
       "displayName": "Men Red Checkered Pyjamas",
@@ -316,7 +316,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_036",
-      "path": "/male/pyjamas/36.jpg",
+      "path": "collections/male/pyjamas/36.jpg",
       "type": "bottoms",
       "category": "pyjamas",
       "displayName": "Men Green Checkered Pyjamas",
@@ -325,7 +325,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_037",
-      "path": "/male/pyjamas/37.jpg",
+      "path": "collections/male/pyjamas/37.jpg",
       "type": "bottoms",
       "category": "pyjamas",
       "displayName": "Men Red Checkered Pyjamas",
@@ -334,7 +334,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_038",
-      "path": "/male/pyjamas/38.jpg",
+      "path": "collections/male/pyjamas/38.jpg",
       "type": "bottoms",
       "category": "pyjamas",
       "displayName": "Men Yellow Checkered Pyjamas",
@@ -343,7 +343,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_039",
-      "path": "/male/pyjamas/39.jpg",
+      "path": "collections/male/pyjamas/39.jpg",
       "type": "bottoms",
       "category": "pyjamas",
       "displayName": "Men Black Checkered Pyjamas",
@@ -352,7 +352,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_040",
-      "path": "/male/joggers/40.jpg",
+      "path": "collections/male/joggers/40.jpg",
       "type": "bottoms",
       "category": "joggers",
       "displayName": "Men Beige Basic Joggers",
@@ -361,7 +361,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_041",
-      "path": "/male/joggers/41.jpg",
+      "path": "collections/male/joggers/41.jpg",
       "type": "bottoms",
       "category": "joggers",
       "displayName": "Men Black Basic Joggers",
@@ -370,7 +370,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_042",
-      "path": "/male/joggers/42.jpg",
+      "path": "collections/male/joggers/42.jpg",
       "type": "bottoms",
       "category": "joggers",
       "displayName": "Men Peach Basic Joggers",
@@ -379,7 +379,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_043",
-      "path": "/male/joggers/43.jpg",
+      "path": "collections/male/joggers/43.jpg",
       "type": "bottoms",
       "category": "joggers",
       "displayName": "Men Black Basic Joggers",
@@ -388,7 +388,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_044",
-      "path": "/male/joggers/44.jpg",
+      "path": "collections/male/joggers/44.jpg",
       "type": "bottoms",
       "category": "joggers",
       "displayName": "Men Beige Basic Joggers",
@@ -397,7 +397,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_045",
-      "path": "/male/joggers/45.jpeg",
+      "path": "collections/male/joggers/45.jpeg",
       "type": "bottoms",
       "category": "joggers",
       "displayName": "Men Blue Basic Joggers",
@@ -406,7 +406,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_046",
-      "path": "/male/joggers/46.jpeg",
+      "path": "collections/male/joggers/46.jpeg",
       "type": "bottoms",
       "category": "joggers",
       "displayName": "Men Brown Basic Joggers",
@@ -415,7 +415,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_047",
-      "path": "/male/joggers/47.jpeg",
+      "path": "collections/male/joggers/47.jpeg",
       "type": "bottoms",
       "category": "joggers",
       "displayName": "Men Grey Basic Joggers",
@@ -424,7 +424,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_048",
-      "path": "/male/jeans/48.jpg",
+      "path": "collections/male/jeans/48.jpg",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Men Blue Denim Jeans",
@@ -433,7 +433,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_049",
-      "path": "/male/jeans/49.jpg",
+      "path": "collections/male/jeans/49.jpg",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Men Blue Denim Jeans",
@@ -442,7 +442,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_050",
-      "path": "/male/jeans/50.jpg",
+      "path": "collections/male/jeans/50.jpg",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Men Blue Denim Jeans",
@@ -451,7 +451,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_051",
-      "path": "/male/jeans/51.webp",
+      "path": "collections/male/jeans/51.webp",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Men Black Denim Jeans",
@@ -460,7 +460,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_052",
-      "path": "/male/jeans/52.jpg",
+      "path": "collections/male/jeans/52.jpg",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Men Blue Denim Jeans",
@@ -469,7 +469,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_053",
-      "path": "/male/jeans/53.jpg",
+      "path": "collections/male/jeans/53.jpg",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Men Grey Denim Jeans",
@@ -478,7 +478,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_054",
-      "path": "/male/jeans/54.jpeg",
+      "path": "collections/male/jeans/54.jpeg",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Men Grey Denim Jeans",
@@ -487,7 +487,7 @@ export const MenCollections = [
     },
     {
       "id": "m_sh_055",
-      "path": "/male/jeans/55.jpeg",
+      "path": "collections/male/jeans/55.jpeg",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Men Black Denim Jeans",
@@ -496,7 +496,7 @@ export const MenCollections = [
     },
     {
         "id": "m_sh_056",
-        "path": "/male/traditional/56.jpg",
+        "path": "collections/male/traditional/56.jpg",
         "type": "one-pieces",
         "category": "traditional",
         "displayName": "Men Red Embroidered Cotton Short Kurta",
@@ -505,7 +505,7 @@ export const MenCollections = [
       },
       {
         "id": "m_sh_057",
-        "path": "/male/traditional/57.jpg",
+        "path": "collections/male/traditional/57.jpg",
         "type": "one-pieces",
         "category": "traditional",
         "displayName": "Men Maroon Printed Cotton Kurta",
@@ -514,7 +514,7 @@ export const MenCollections = [
       },
       {
         "id": "m_sh_058",
-        "path": "/male/traditional/59.jpg",
+        "path": "collections/male/traditional/59.jpg",
         "type": "one-pieces",
         "category": "traditional",
         "displayName": "Men Teal Sequin-Embroidered Kurta",
@@ -523,7 +523,7 @@ export const MenCollections = [
       },
       {
         "id": "m_sh_059",
-        "path": "/male/traditional/58.jpg",
+        "path": "collections/male/traditional/58.jpg",
         "type": "one-pieces",
         "category": "traditional",
         "displayName": "Men Teal-Black Brocade Kurta",
@@ -535,7 +535,7 @@ export const MenCollections = [
   export const WomenCollection=[
     {
       "id": "f_sh_01",
-      "path": "/female/trousers/1.jpg",
+      "path": "collections/female/trousers/1.jpg",
       "type": "bottoms",
       "category": "trousers",
       "displayName": "Women Beige High-Waisted Trousers",
@@ -544,7 +544,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_02",
-      "path": "/female/trousers/2.jpeg",
+      "path": "collections/female/trousers/2.jpeg",
       "type": "bottoms",
       "category": "trousers",
       "displayName": "Women Brown High-Waisted Trousers",
@@ -553,7 +553,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_03",
-      "path": "/female/trousers/3.jpeg",
+      "path": "collections/female/trousers/3.jpeg",
       "type": "bottoms",
       "category": "trousers",
       "displayName": "Women Black High-Waisted Trousers",
@@ -562,7 +562,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_04",
-      "path": "/female/trousers/4.jpeg",
+      "path": "collections/female/trousers/4.jpeg",
       "type": "bottoms",
       "category": "trousers",
       "displayName": "Women Black Slim-Fit Trousers",
@@ -571,7 +571,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_05",
-      "path": "/female/trousers/5.jpeg",
+      "path": "collections/female/trousers/5.jpeg",
       "type": "bottoms",
       "category": "trousers",
       "displayName": "Women Brown Slim-Fit Trousers",
@@ -580,7 +580,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_06",
-      "path": "/female/trousers/6.jpeg",
+      "path": "collections/female/trousers/6.jpeg",
       "type": "bottoms",
       "category": "trousers",
       "displayName": "Women Beige Slim-Fit Trousers",
@@ -589,7 +589,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_07",
-      "path": "/female/trousers/7.jpeg",
+      "path": "collections/female/trousers/7.jpeg",
       "type": "bottoms",
       "category": "trousers",
       "displayName": "Women Purple Slim-Fit Trousers",
@@ -598,7 +598,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_08",
-      "path": "/female/trousers/8.jpeg",
+      "path": "collections/female/trousers/8.jpeg",
       "type": "bottoms",
       "category": "trousers",
       "displayName": "Women Peach Slim-Fit Trousers",
@@ -607,7 +607,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_09",
-      "path": "/female/tops/9.jpg",
+      "path": "collections/female/tops/9.jpg",
       "type": "tops",
       "category": "tops",
       "displayName": "Women Maroon Off-Shoulder Top",
@@ -616,7 +616,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_010",
-      "path": "/female/tops/10.jpg",
+      "path": "collections/female/tops/10.jpg",
       "type": "tops",
       "category": "tops",
       "displayName": "Women Black Ribbed Knit Top",
@@ -625,7 +625,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_011",
-      "path": "/female/tops/11.jpg",
+      "path": "collections/female/tops/11.jpg",
       "type": "tops",
       "category": "tops",
       "displayName": "Women Peach Off-Shoulder Top",
@@ -634,7 +634,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_012",
-      "path": "/female/tops/12.jpg",
+      "path": "collections/female/tops/12.jpg",
       "type": "tops",
       "category": "tops",
       "displayName": "Women Pink Floral Print Top",
@@ -643,7 +643,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_013",
-      "path": "/female/tops/13.jpg",
+      "path": "collections/female/tops/13.jpg",
       "type": "tops",
       "category": "tops",
       "displayName": "Women Pink Sleeveless Top",
@@ -652,7 +652,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_014",
-      "path": "/female/tops/14.jpg",
+      "path": "collections/female/tops/14.jpg",
       "type": "tops",
       "category": "tops",
       "displayName": "Women Pink Peplum Top",
@@ -661,7 +661,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_015",
-      "path": "/female/tops/15.jpg",
+      "path": "collections/female/tops/15.jpg",
       "type": "tops",
       "category": "tops",
       "displayName": "Women Black Blouse Top",
@@ -670,7 +670,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_016",
-      "path": "/female/tops/16.jpg",
+      "path": "collections/female/tops/16.jpg",
       "type": "tops",
       "category": "tops",
       "displayName": "Women Yellow Lace-Detail Top",
@@ -679,7 +679,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_017",
-      "path": "/female/tops/17.jpg",
+      "path": "collections/female/tops/17.jpg",
       "type": "tops",
       "category": "tops",
       "displayName": "Women Brown Ribbed Tank Top",
@@ -688,7 +688,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_018",
-      "path": "/female/tops/18.jpg",
+      "path": "collections/female/tops/18.jpg",
       "type": "tops",
       "category": "tops",
       "displayName": "Women Pink Ruffle-Sleeve Top",
@@ -697,7 +697,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_019",
-      "path": "/female/tops/19.jpeg",
+      "path": "collections/female/tops/19.jpeg",
       "type": "tops",
       "category": "tops",
       "displayName": "Women Brown Peplum Top",
@@ -706,7 +706,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_020",
-      "path": "/female/shirts/20.jpeg",
+      "path": "collections/female/shirts/20.jpeg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Women Brown Button-Down Shirt",
@@ -715,7 +715,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_021",
-      "path": "/female/shirts/2.jpeg",
+      "path": "collections/female/shirts/2.jpeg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Women Taupe Relaxed-Fit Shirt",
@@ -724,7 +724,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_022",
-      "path": "/female/shirts/22.jpeg",
+      "path": "collections/female/shirts/22.jpeg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Women Red Checkered Shirt",
@@ -733,7 +733,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_023",
-      "path": "/female/shirts/23.jpeg",
+      "path": "collections/female/shirts/23.jpeg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Women Blue Classic Shirt",
@@ -742,7 +742,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_024",
-      "path": "/female/shirts/24.jpeg",
+      "path": "collections/female/shirts/24.jpeg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Women Red Checkered Shirt",
@@ -751,7 +751,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_025",
-      "path": "/female/shirts/25.jpg",
+      "path": "collections/female/shirts/25.jpg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Women Blue Classic Shirt",
@@ -760,7 +760,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_026",
-      "path": "/female/shirts/26.jpg",
+      "path": "collections/female/shirts/26.jpg",
       "type": "tops",
       "category": "shirts",
       "displayName": "Women Blue Classic Shirt",
@@ -769,7 +769,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_027",
-      "path": "/female/jeans/27.jpg",
+      "path": "collections/female/jeans/27.jpg",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Women Blue Slim-Fit Jeans",
@@ -778,7 +778,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_028",
-      "path": "/female/jeans/28.jpg",
+      "path": "collections/female/jeans/28.jpg",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Women Blue Slim-Fit Jeans",
@@ -787,7 +787,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_029",
-      "path": "/female/jeans/29.jpg",
+      "path": "collections/female/jeans/29.jpg",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Women Blue Slim-Fit Jeans",
@@ -796,7 +796,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_030",
-      "path": "/female/jeans/30.jpg",
+      "path": "collections/female/jeans/30.jpg",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Women Blue Slim-Fit Jeans",
@@ -805,7 +805,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_031",
-      "path": "/female/jeans/31.jpg",
+      "path": "collections/female/jeans/31.jpg",
       "type": "bottoms",
       "category": "jeans",
       "displayName": "Women Blue Slim-Fit Jeans",
@@ -814,7 +814,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_032",
-      "path": "/female/dresses/32.jpg",
+      "path": "collections/female/dresses/32.jpg",
       "type": "one-pieces",
       "category": "dresses",
       "displayName": "Women Green A-Line Dress",
@@ -823,7 +823,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_033",
-      "path": "/female/dresses/33.jpg",
+      "path": "collections/female/dresses/33.jpg",
       "type": "one-pieces",
       "category": "dresses",
       "displayName": "Women Green A-Line Dress",
@@ -832,7 +832,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_034",
-      "path": "/female/dresses/34.jpg",
+      "path": "collections/female/dresses/34.jpg",
       "type": "one-pieces",
       "category": "dresses",
       "displayName": "Women Pink Floral Print Dress",
@@ -841,7 +841,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_035",
-      "path": "/female/dresses/35.jpeg",
+      "path": "collections/female/dresses/35.jpeg",
       "type": "one-pieces",
       "category": "dresses",
       "displayName": "Women Red Lace Midi Dress",
@@ -850,7 +850,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_036",
-      "path": "/female/dresses/36.jpg",
+      "path": "collections/female/dresses/36.jpg",
       "type": "one-pieces",
       "category": "dresses",
       "displayName": "Women Peach Off-Shoulder Midi Dress",
@@ -859,7 +859,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_037",
-      "path": "/female/dresses/37.jpg",
+      "path": "collections/female/dresses/37.jpg",
       "type": "one-pieces",
       "category": "dresses",
       "displayName": "Women Green Pastel Fit-&-Flare Dress",
@@ -868,7 +868,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_038",
-      "path": "/female/dresses/38.jpg",
+      "path": "collections/female/dresses/38.jpg",
       "type": "one-pieces",
       "category": "dresses",
       "displayName": "Women Black Bodycon Midi Dress",
@@ -877,7 +877,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_039",
-      "path": "/female/dresses/39.jpg",
+      "path": "collections/female/dresses/39.jpg",
       "type": "one-pieces",
       "category": "dresses",
       "displayName": "Women Blue Wrap Midi Dress",
@@ -886,7 +886,7 @@ export const MenCollections = [
     },
     {
       "id": "f_sh_040",
-      "path": "/female/jeans/40.jpg",
+      "path": "collections/female/jeans/40.jpg",
       "type": "one-pieces",
       "category": "dresses",
       "displayName": "Women Blue Floral Midi Dress",
@@ -895,7 +895,7 @@ export const MenCollections = [
     },
     {
         "id": "f_sh_041",
-        "path": "/female/jeans/41.jpg",
+        "path": "collections/female/jeans/41.jpg",
         "type": "one-pieces",
         "category": "kurta",
         "displayName": "Women Yellow Floral Full-Sleeve Kurta",
@@ -904,7 +904,7 @@ export const MenCollections = [
       },
       {
         "id": "f_sh_042",
-        "path": "/female/jeans/42.jpg",
+        "path": "collections/female/jeans/42.jpg",
         "type": "one-pieces",
         "category": "kurta",
         "displayName": "Women Black Peacock-Print Full-Length Kurta",
@@ -913,7 +913,7 @@ export const MenCollections = [
       },
       {
         "id": "f_sh_043",
-        "path": "/female/jeans/43.jpg",
+        "path": "collections/female/jeans/43.jpg",
         "type": "one-pieces",
         "category": "kurta",
         "displayName": "Women Black Solid Kurta with Floral Embroidery",
@@ -922,7 +922,7 @@ export const MenCollections = [
       },
       {
         "id": "f_sh_044",
-        "path": "/female/jeans/44.jpg",
+        "path": "collections/female/jeans/44.jpg",
         "type": "one-pieces",
         "category": "kurta",
         "displayName": "Women Blue Sport-Tex Performance Kurta",
@@ -931,7 +931,7 @@ export const MenCollections = [
       },
       {
         "id": "f_sh_045",
-        "path": "/female/jeans/45.jpg",
+        "path": "collections/female/jeans/45.jpg",
         "type": "one-pieces",
         "category": "kurta",
         "displayName": "Women Black Intricate Floral Kurta",
@@ -947,56 +947,56 @@ export const woman = ["dresses", "jeans", "shirts", "tops", "trousers", "kurta"]
 export const menCategories = [
   {
     name: "tshirts",
-    path:"collections/categories/male/tshirt.jpg"
+    path:"collections/categoriescollections/male/tshirt.jpg"
   },
   {
     name: "joggers",
-    path:"collections/categories/male/joggers.png"
+    path:"collections/categoriescollections/male/joggers.png"
   },
   {
     name: "pyjamas",
-    path:"collections/categories/male/pyjama.jpg"
+    path:"collections/categoriescollections/male/pyjama.jpg"
   },
   {
     name: "jeans",
-    path:"collections/categories/male/jeans.jpg"
+    path:"collections/categoriescollections/male/jeans.jpg"
   },
   {
     name: "shirts",
-    path:"collections/categories/male/shirt.jpg"
+    path:"collections/categoriescollections/male/shirt.jpg"
   },
   {
     name: "shorts",
-    path:"collections/categories/male/shorts.png"
+    path:"collections/categoriescollections/male/shorts.png"
   },
   {
     name: "traditional",
-    path:"collections/categories/male/traditional.webp"
+    path:"collections/categoriescollections/male/traditional.webp"
   }
 ]
 export const womenCategories = [
   {
     name: "dresses",
-    path:"collections/categories/female/dresses.jpg"
+    path:"collections/categoriescollections/female/dresses.jpg"
   },
   {
     name: "jeans",
-    path:"collections/categories/female/jeans.jpg"
+    path:"collections/categoriescollections/female/jeans.jpg"
   },
   {
     name: "shirts",
-    path:"collections/categories/female/shirt.jpg"
+    path:"collections/categoriescollections/female/shirt.jpg"
   },
   {
     name: "tops",
-    path:"collections/categories/female/tops.jpg"
+    path:"collections/categoriescollections/female/tops.jpg"
   },
   {
     name: "trousers",
-    path:"collections/categories/female/trousers.jpg"
+    path:"collections/categoriescollections/female/trousers.jpg"
   },
   {
     name: "kurta",
-    path:"collections/categories/female/kutra.jpg"
+    path:"collections/categoriescollections/female/kutra.jpg"
   },
 ]

@@ -46,7 +46,8 @@ export default function Categories()
             if (gesture.gesture == "thumbs_up")
             {
                 console.log('thumbs up')
-                setGesture(gesture=>({...gesture,gesture:null,direction:null}))
+                setGesture(gesture => ({ ...gesture, gesture: null, direction: null }))
+                localStorage.setItem('category',paths[index].name)
                 nav('/clothes')
             }
         }
@@ -68,7 +69,7 @@ export default function Categories()
     },[])
     return (
         <div>
-        <Header heading={"Categories"}/>
+        <Header heading={localStorage.getItem('gender')}/>
         {loading?
             <Loader /> :
                 <div className="bg-white/40 w-[40vw] p-8 m-auto rounded-4xl">

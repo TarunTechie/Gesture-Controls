@@ -8,14 +8,14 @@ export default function TryOn()
       <div className="w-screen flex justify-around p-4 text-2xl text-white font-extrabold underline underline-offset-2 items-center">
         <span>
         <h1>MODEL</h1>
-        <img src={localStorage.getItem('photo')} className="rounded-xl"/>
+        <img src={localStorage.getItem('photo')} className="rounded-xl w-[40vw] h-[60vh]"/>
         </span>
         <span className="grid items-center justify-center">
           <img src="public\icons\thumbsUp.svg" className="w-10 h-10 m-auto"/>TO TRY ON
         </span>
         <span>
         <h1>GARMENT</h1>
-        <img src={localStorage.getItem('photo')} className="rounded-xl"/>
+        <img src={localStorage.getItem('clothPath')} className="rounded-xl w-[40vw] h-[60vh]"/>
         </span>
       </div>
     </div>

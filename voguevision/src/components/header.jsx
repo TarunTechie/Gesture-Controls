@@ -15,7 +15,7 @@ export default function Header({ heading }) {
             <div className="bg-[#210632] h-fit text-xl px-2 py-2 items-center rounded-full">
               <span className="flex items-center bg-white/20 px-20 py-4 rounded-full gap-4 text-white font-bold">
                 <img src="/icons/header.svg" className="h-10" alt="Header Icon" />
-                <h1>{heading}</h1>
+                <h1>{heading.toUpperCase()}</h1>
               </span>
             </div>
           </div>
