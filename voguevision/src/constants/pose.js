@@ -27,14 +27,48 @@ function getDirection(landmarks)
 
 function getGesture(landmarks)
 {
-    const ge = new fp.GestureEstimator([fp.Gestures.ThumbsUpGesture])
+    const ge = new fp.GestureEstimator([fp.Gestures.ThumbsUpGesture,fp.Gestures.VictoryGesture])
     const gesture = ge.estimate(landmarks, 7.5)
-    if (gesture.gestures.length > 0)
+
+    const fingertips = [4, 8, 12, 16, 20]
+    const finger_name=["thumb","index","middle","ring","little"]
+    let opened = []
+    
+    if(landmarks)
     {
-        return gesture.gestures[0].name
-    }
-    else
-    {
-        return null
+
+        fingertips.forEach((tips,index) => {
+            if (index === 0)
+            {
+                if (landmarks[tips][0] > landmarks[tips -2][0])
+                {
+                    opened.push(finger_name[index])
+                }
+            }
+            else
+            {
+                if (landmarks[tips][1] < landmarks[tips -2][1])
+                {
+                    opened.push(finger_name[index])
+                }
+            }
+        })
+
+        if (gesture.gestures.length > 0)
+        {
+            return gesture.gestures[0].name
+        }
+        if ((opened.length===3)&&(opened.includes("middle")&&opened.includes("ring")&&opened.includes("little")))
+        {
+            return "super"
+        }
+        if ((opened.length === 3) && (opened.includes("index") && opened.includes("little") && opened.includes('thumb')))
+        {
+            return "cart"
+        }
+        else
+        {
+            return null    
+        }
     }
 }

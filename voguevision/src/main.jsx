@@ -10,6 +10,7 @@ import Clothes from './pages/clothes.jsx'
 import Categories from './pages/categories.jsx'
 import TryOn from './pages/tryon.jsx'
 import Output from './pages/output.jsx'
+import CartPage from './pages/cartPage.jsx'
 const Router = createBrowserRouter([
   {
     path: '/',
@@ -38,6 +39,10 @@ const Router = createBrowserRouter([
   {
     path: '/output',
     element:<Output/>
+  },
+  {
+    path: '/cart',
+    element: <CartPage />
   }
 ])
 

@@ -2,9 +2,11 @@ import { useLocation } from "react-router-dom";
 import { tryonApi } from "../constants/api";
 import { useEffect, useState } from "react";
 import Header from "../components/header";
+import Loader from "../components/loader";
 export default function Output()
 {
     const [image, setImage] = useState(null)
+    const [loading,setLoading]=useState(true)
     const location = useLocation()
     const id=location.state.id
     async function getImage()
@@ -14,6 +16,7 @@ export default function Output()
             if (result.data.status === 'completed')
             {
                 setImage(result.data.output[0])
+                setLoading(false)
             }
             else
             {
@@ -29,12 +32,11 @@ export default function Output()
     },[])
     return (
     <div className="min-h-screen flex flex-col">
-  {/* Top header */}
   <Header heading={'Your Image'} />
 
-   <div className="grid justify-center items-center ">
+   {loading?<Loader/>:<div className="grid justify-center items-center ">
         <img src={image} className="m-auto rounded-2xl"/>
-    </div>
+    </div>}
 </div>
     )
 }

@@ -68,7 +68,18 @@ export default function Clothes()
                 fetchImage(path)
                 nav('/capture')
             }
-            
+            if (gesture.gesture === 'super')
+            {
+                if (localStorage.getItem('cart') == undefined)
+                {
+                    localStorage.setItem('cart',collections[index].id+',')
+                }
+                else
+                {
+                    let toCart=localStorage.getItem('cart')+collections[index].id+','
+                    localStorage.setItem('cart',toCart)    
+                }
+            }
         }
     }
     useEffect(() => { changePic(gesture) }, [gesture])

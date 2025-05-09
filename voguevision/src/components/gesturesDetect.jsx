@@ -5,10 +5,12 @@ import { useContext, useEffect, useRef} from "react";
 
 import {Broadcast,Loading} from "./broadcaster";
 import { Pose } from "../constants/pose";
+import { useNavigate } from "react-router-dom";
 export default function GestureDetect()
 {
     const { gesture, setGesture } = useContext(Broadcast)
-    const {loading,setLoading}=useContext(Loading)
+    const { loading, setLoading } = useContext(Loading)
+    const nav=useNavigate()
     const webcamRef = useRef(null)
     let interval;
     const runModel = async () => {
@@ -33,8 +35,16 @@ export default function GestureDetect()
             {
                 const fingers = new Pose(hands[0].landmarks)
                 const detectedGesture = fingers.getGesture()
-                setGesture({ gesture: detectedGesture.gesture,direction:detectedGesture.direction ,change:!gesture.change,hands:true})
+                if (detectedGesture.gesture === 'cart')
+                {
+                    nav('/cart')
                 }
+                if (detectedGesture.gesture === 'victory')
+                {
+                    nav(-1)
+                }
+                setGesture({ gesture: detectedGesture.gesture,direction:detectedGesture.direction ,change:!gesture.change,hands:true})
+            }
             }
             catch (error)
             {
