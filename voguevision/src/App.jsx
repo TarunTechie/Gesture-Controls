@@ -10,7 +10,7 @@ export default function App() {
   const { gesture, setGesture } = useContext(Broadcast)
   
   useEffect(() => {
-    if (gesture.hands === true && gesture.diretion=="right" || gesture.diretion=="left") {
+    if (gesture.hands === true) {
       localStorage.clear('cart')
       nav('/gender')
     }
