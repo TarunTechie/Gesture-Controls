@@ -101,10 +101,6 @@ export default function Categories() {
             ) : (
                 <div className="flex-1 flex flex-col items-center justify-center px-4 py-8">
                     <div className="w-full max-w-4xl">
-                        {/* Category title */}
-                        <h2 className="text-white/80 text-2xl font-light text-center mb-10">
-                            Select a Category
-                        </h2>
                         
                         {/* Main image and navigation */}
                         <div className="flex items-center justify-between gap-4">
@@ -151,10 +147,10 @@ export default function Categories() {
                                         <img 
                                             src="/gesture_icon/thumbsUp.svg" 
                                             alt="Thumbs up" 
-                                            className="w-5 h-5"
+                                            className="w-10 h-10"
                                             style={{ filter: 'invert(100%)' }}
                                         />
-                                        <span className="text-white text-xs">Thumbs up to select</span>
+                                        <span className="text-white m-auto">Thumbs up to select</span>
                                     </div>
                                 )}
                             </div>
