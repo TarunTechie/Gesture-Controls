@@ -10,14 +10,7 @@ export default function App()
   const{gesture,setGesture}=useContext(Broadcast)
   useEffect(()=>{
     if(gesture.hands==true)
-    {
-      setCounter((counter)=>counter=counter+1)
-      console.log("THis is counter",counter)
-    }
-    if(counter>1)
-    {
       nav('/gender')
-    }
   },[gesture])
   return (
     <div>
@@ -27,6 +20,7 @@ export default function App()
       <Link to={'/gender'} > <button className="button"> GENDER   </button> </Link>
       <Link to={'/clothes'}><button className="button"> CLOTHES </button>   </Link>
       <Link to={'/categories'}><button className="button"> CATEGORIES </button>   </Link>
+      <Link to={'/output'}><button className="button"> OUTPUT </button>   </Link>
     </div> 
   )
 }

@@ -4,11 +4,12 @@ import { tryonApi } from "../constants/api";
 import { useContext } from "react";
 import { Broadcast,Loading } from "../components/broadcaster";
 import Loader from "../components/loader";
+import { useNavigate } from "react-router-dom";
 export default function TryOn()
 {
   const { gesture, setGesture } = useContext(Broadcast)
   const { loading, setLoading } = useContext(Loading)
-  
+  const nav=useNavigate()
   async function getOverlay()
   {
     const tosend = {
@@ -20,7 +21,7 @@ export default function TryOn()
     }
     try {
       const result = await tryonApi.post('/run', JSON.stringify(tosend))
-      console.log(result.data)
+      nav('/output',{state:{id:result.data.id}})
     } catch (error) {
       console.error(error)
     }
@@ -41,7 +42,7 @@ export default function TryOn()
         <img src={localStorage.getItem('photo')} className="rounded-xl w-[40vw] h-[60vh]"/>
         </span>
         <span className="grid items-center justify-center">
-          <img src="public\icons\thumbsUp.svg" className="w-10 h-10 m-auto"/>TO TRY ON
+          <img src="\icons\thumbsUp.svg" className="w-10 h-10 m-auto"/>TO TRY ON
         </span>
         <span>
         <h1>GARMENT</h1>

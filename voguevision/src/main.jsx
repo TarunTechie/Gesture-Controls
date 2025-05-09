@@ -9,6 +9,7 @@ import Gender from './pages/gender.jsx'
 import Clothes from './pages/clothes.jsx'
 import Categories from './pages/categories.jsx'
 import TryOn from './pages/tryon.jsx'
+import Output from './pages/output.jsx'
 const Router = createBrowserRouter([
   {
     path: '/',
@@ -33,6 +34,10 @@ const Router = createBrowserRouter([
   {
     path: "/tryon",
     element:<TryOn/>
+  },
+  {
+    path: '/output',
+    element:<Output/>
   }
 ])
 
