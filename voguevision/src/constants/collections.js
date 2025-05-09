@@ -947,56 +947,56 @@ export const woman = ["dresses", "jeans", "shirts", "tops", "trousers", "kurta"]
 export const menCategories = [
   {
     name: "tshirts",
-    path:"collections/categoriescollections/male/tshirt.jpg"
+    path:"collections/categories/male/tshirt.jpg"
   },
   {
     name: "joggers",
-    path:"collections/categoriescollections/male/joggers.png"
+    path:"collections/categories/male/joggers.png"
   },
   {
     name: "pyjamas",
-    path:"collections/categoriescollections/male/pyjama.jpg"
+    path:"collections/categories/male/pyjama.jpg"
   },
   {
     name: "jeans",
-    path:"collections/categoriescollections/male/jeans.jpg"
+    path:"collections/categories/male/jeans.jpg"
   },
   {
     name: "shirts",
-    path:"collections/categoriescollections/male/shirt.jpg"
+    path:"collections/categories/male/shirt.jpg"
   },
   {
     name: "shorts",
-    path:"collections/categoriescollections/male/shorts.png"
+    path:"collections/categories/male/shorts.png"
   },
   {
     name: "traditional",
-    path:"collections/categoriescollections/male/traditional.webp"
+    path:"collections/categories/male/traditional.webp"
   }
 ]
 export const womenCategories = [
   {
     name: "dresses",
-    path:"collections/categoriescollections/female/dresses.jpg"
+    path:"collections/categories/female/dresses.jpg"
   },
   {
     name: "jeans",
-    path:"collections/categoriescollections/female/jeans.jpg"
+    path:"collections/categories/female/jeans.jpg"
   },
   {
     name: "shirts",
-    path:"collections/categoriescollections/female/shirt.jpg"
+    path:"collections/categories/female/shirt.jpg"
   },
   {
     name: "tops",
-    path:"collections/categoriescollections/female/tops.jpg"
+    path:"collections/categories/female/tops.jpg"
   },
   {
     name: "trousers",
-    path:"collections/categoriescollections/female/trousers.jpg"
+    path:"collections/categories/female/trousers.jpg"
   },
   {
     name: "kurta",
-    path:"collections/categoriescollections/female/kutra.jpg"
+    path:"collections/categories/female/kutra.jpg"
   },
 ]
