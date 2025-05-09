@@ -941,12 +941,12 @@ export const MenCollections = [
   ]
     
 
-export const man=["tshirts","joggers","pyjamas","jeans","shirts","shorts","traditional"]
+export const man=["tshirt","joggers","pyjamas","jeans","shirts","shorts","traditional"]
 export const woman = ["dresses", "jeans", "shirts", "tops", "trousers", "kurta"]
 
 export const menCategories = [
   {
-    name: "tshirts",
+    name: "tshirt",
     path:"collections/categories/male/tshirt.jpg"
   },
   {
@@ -977,7 +977,7 @@ export const menCategories = [
 export const womenCategories = [
   {
     name: "dresses",
-    path:"collections/categories/female/dresses.jpg"
+    path:"collections/categories/female/dresses.png"
   },
   {
     name: "jeans",

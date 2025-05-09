@@ -150,7 +150,7 @@ export default function Categories() {
                                             className="w-10 h-10"
                                             style={{ filter: 'invert(100%)' }}
                                         />
-                                        <span className="text-white text-xs">Thumbs up to select</span>
+                                        <span className="text-white m-auto">Thumbs up to select</span>
                                     </div>
                                 )}
                             </div>
