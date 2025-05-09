@@ -14,6 +14,10 @@ export default function Clothes() {
     const { loading, setLoading } = useContext(Loading)
     const nav = useNavigate()
     
+    // Toast state
+    const [showToast, setShowToast] = useState(false)
+    const [toastMessage, setToastMessage] = useState("")
+    
     // Define the gestures for this page
     const pageGestures = {
         leftHand: {
@@ -32,6 +36,17 @@ export default function Clothes() {
             icon: "./gesture_icon/rightHand.svg",
             action: "Next"
         }
+    }
+    
+    // Function to show toast notification
+    const displayToast = (message) => {
+        setToastMessage(message)
+        setShowToast(true)
+        
+        // Hide toast after 3 seconds
+        setTimeout(() => {
+            setShowToast(false)
+        }, 3000)
     }
     
     function changePic(gesture)
@@ -100,6 +115,9 @@ export default function Clothes() {
                     let toCart=localStorage.getItem('cart')+collections[index].id+','
                     localStorage.setItem('cart',toCart)    
                 }
+                
+                // Display toast notification when item is added to cart
+                displayToast(`${collections[index].displayName} added to cart!`)
             }
         }
     }
@@ -142,7 +160,7 @@ export default function Clothes() {
                             {/* Left hand navigation */}
                             <div className="flex flex-col items-center">
                                 <button 
-                                    onClick={() => { changePic("left") }}
+                                    onClick={() => { changePic({direction: "left", gesture: null}) }}
                                     className="bg-[#3c2e58] hover:bg-[#4d3b6e] rounded-full p-3 transition-all duration-300"
                                 >
                                     <img 
@@ -199,7 +217,10 @@ export default function Clothes() {
                                                     <h1>{collections[index].color}</h1>
                                                 </span>
                                                 
-                                                <div className="flex items-center gap-2 bg-[#4d3b6e] py-1.5 px-4 rounded-full">
+                                                <div 
+                                                    className="flex items-center gap-2 bg-[#4d3b6e] py-1.5 px-4 rounded-full cursor-pointer hover:bg-[#5d4b7e] transition-colors duration-300"
+                                                    onClick={() => changePic({gesture: "super"})}
+                                                >
                                                     <img 
                                                         src="./gesture_icon/open_cart.svg" 
                                                         className="h-5 w-5" 
@@ -217,7 +238,7 @@ export default function Clothes() {
                             {/* Right hand navigation */}
                             <div className="flex flex-col items-center">
                                 <button 
-                                    onClick={() => { changePic("right") }}
+                                    onClick={() => { changePic({direction: "right", gesture: null}) }}
                                     className="bg-[#3c2e58] hover:bg-[#4d3b6e] rounded-full p-3 transition-all duration-300"
                                 >
                                     <img 
@@ -252,6 +273,26 @@ export default function Clothes() {
                 </div>
             )}
             
+            {/* Toast Notification */}
+            <div 
+                className={`fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-[#7E8ABA] text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3 transition-all duration-500 ${
+                    showToast ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
+                }`}
+            >
+                <img 
+                    src="./gesture_icon/open_cart.svg" 
+                    className="h-5 w-5" 
+                    alt="Cart" 
+                    style={{ filter: 'invert(100%)' }}
+                />
+                <span>{toastMessage}</span>
+                
+                {/* Animated progress bar */}
+                {showToast && (
+                    <div className="absolute bottom-0 left-0 h-1 bg-white/70 rounded-b-full animate-progress"></div>
+                )}
+            </div>
+            
             {/* Add animation keyframes */}
             <style jsx>{`
                 @keyframes pulse-subtle {
@@ -260,8 +301,17 @@ export default function Clothes() {
                     100% { opacity: 0.8; }
                 }
                 
+                @keyframes progress {
+                    0% { width: 100%; }
+                    100% { width: 0%; }
+                }
+                
                 .animate-pulse-subtle {
                     animation: pulse-subtle 2s ease-in-out infinite;
+                }
+                
+                .animate-progress {
+                    animation: progress 3s linear forwards;
                 }
             `}</style>
         </div>
