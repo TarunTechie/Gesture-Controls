@@ -81,18 +81,18 @@ export default function Gender() {
                 </div>
                 
                 {/* Text with better typography */}
-                <h1 className="text-2xl font-bold tracking-wider mt-3">{text.toUpperCase()}</h1>
+                <h1 className="text-2xl font-bold tracking-wider mb-4">{text.toUpperCase()}</h1>
                 
                 {/* Hand gesture indicator */}
-                <div className={`absolute bottom-4 ${side === 'left' ? 'right-4' : 'left-4'} flex items-center gap-1 text-xs font-light text-white/70`}>
+                <div className={` bottom-4 ${side === 'left' ? 'right-4' : 'left-4'} flex items-center gap-1 text-xs font-light text-white/70`}>
                     <div className="flex items-center gap-1">
                         <img 
                             src={`./gesture_icon/${side}Hand.svg`} 
                             alt={`${side} hand`} 
-                            className="w-4 h-4"
+                            className="w-10 h-10"
                             style={{ filter: 'invert(100%)' }}
                         />
-                        <span className="text-xs">Raise {side} hand</span>
+                        <span className="text-xl">Raise {side} hand</span>
                     </div>
                 </div>
             </div>
@@ -135,27 +135,7 @@ export default function Gender() {
                         </div>
                         
                         {/* Gesture instruction */}
-                        <div className="flex items-center gap-8 mt-16">
-                            <div className="flex items-center gap-2">
-                                <img 
-                                    src="./gesture_icon/leftHand.svg" 
-                                    alt="Raise left hand" 
-                                    className="w-8 h-8"
-                                    style={{ filter: 'invert(100%)' }}
-                                />
-                                <span className="text-white/60 text-lg">for Female</span>
-                            </div>
-                            
-                            <div className="flex items-center gap-2">
-                                <img 
-                                    src="./gesture_icon/rightHand.svg" 
-                                    alt="Raise right hand" 
-                                    className="w-8 h-8"
-                                    style={{ filter: 'invert(100%)' }}
-                                />
-                                <span className="text-white/60 text-lg">for Male</span>
-                            </div>
-                        </div>
+                      
                     </div>
                 </div>
             </div>

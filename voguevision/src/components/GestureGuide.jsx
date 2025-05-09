@@ -21,11 +21,11 @@ const GestureGuide = ({ gestures, position = "top" }) => {
           {Object.entries(gestures).map(([key, { icon, action }]) => (
             <div key={key} className="flex items-center gap-2 px-3 py-1 border-r last:border-r-0 border-purple-400/20">
               <div className="flex flex-col items-center">
-                <div className="w-8 h-8 flex items-center justify-center">
+                <div className="w-16 h-16 flex items-center justify-center">
                   <img 
                     src={icon} 
                     alt={key} 
-                    className="w-6 h-6 opacity-90"
+                    className="w-12 h-12 opacity-90"
                     style={{ filter: 'invert(100%)' }}
                   />
                 </div>
