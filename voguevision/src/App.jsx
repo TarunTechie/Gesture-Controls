@@ -10,8 +10,12 @@ export default function App() {
   const { gesture, setGesture } = useContext(Broadcast)
   
   useEffect(() => {
-    if (gesture.hands === true) {
+    if (gesture.length>0) {
       localStorage.clear('cart')
+      setCounter(1)
+    }
+    if (counter > 0)
+    {
       nav('/gender')
     }
   }, [gesture])

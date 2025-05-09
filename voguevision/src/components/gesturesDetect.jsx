@@ -43,7 +43,7 @@ export default function GestureDetect()
                 {
                     nav(-1)
                 }
-                setGesture({ gesture: detectedGesture.gesture,direction:detectedGesture.direction ,change:!gesture.change,hands:true})
+                setGesture({ gesture: detectedGesture.gesture,direction:detectedGesture.direction ,change:!gesture.change,hands:true,length:hands.length})
             }
             }
             catch (error)
