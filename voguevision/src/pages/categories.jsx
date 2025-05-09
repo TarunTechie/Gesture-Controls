@@ -65,8 +65,15 @@ export default function Categories()
         {
             setPaths(womenCategories)
         }
-        setImgLoad(false)
-    },[])
+    }, [])
+    
+    useEffect(() => {
+        if (paths.length > 0)
+        {
+            setIndex(0)
+            setImgLoad(false)
+        }
+    },[paths])
     return (
         <div>
         <Header heading={localStorage.getItem('gender')==='m'?"MALE":"FEMALE"}/>

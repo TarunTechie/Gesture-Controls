@@ -997,6 +997,6 @@ export const womenCategories = [
   },
   {
     name: "kurta",
-    path:"collections/categories/female/kutra.jpg"
+    path:"collections/categories/female/kurta.jpg"
   },
 ]
