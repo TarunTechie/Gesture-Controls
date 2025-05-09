@@ -43,7 +43,7 @@ export default function Categories()
         }
         else
         {
-            if (gesture.gesture == "thumbs_up")
+            if (gesture.gesture === "thumbs_up")
             {
                 console.log('thumbs up')
                 setGesture(gesture => ({ ...gesture, gesture: null, direction: null }))
@@ -69,7 +69,7 @@ export default function Categories()
     },[])
     return (
         <div>
-        <Header heading={localStorage.getItem('gender')}/>
+        <Header heading={localStorage.getItem('gender')==='m'?"MALE":"FEMALE"}/>
         {loading?
             <Loader /> :
                 <div className="bg-white/40 w-[40vw] p-8 m-auto rounded-4xl">

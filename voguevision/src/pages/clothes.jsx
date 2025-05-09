@@ -4,6 +4,7 @@ import Loader from "../components/loader";
 import { MenCollections,WomenCollection } from "../constants/collections";
 import { Broadcast, Loading } from "../components/broadcaster";
 import { useNavigate } from "react-router-dom";
+
 export default function Clothes()
 {
     const [index, setIndex] = useState(0)
@@ -43,13 +44,31 @@ export default function Clothes()
         }
         else
         {
-            if (gesture.gesture == "thumbs_up")
+            if (gesture.gesture === "thumbs_up")
             {
                 console.log('thumbs up')
+                const path=collections[index].path
                 setGesture(gesture => ({ ...gesture, gesture: null, direction: null }))
-                localStorage.setItem('clothPath',collections[index].path)
+                const fetchImage = async (path) => {
+                    try {
+                        const image = await fetch(path)
+                        const blob = await image.blob()
+                        const reader = new FileReader()
+                        reader.onloadend = () => {
+                            const base64img = reader.result
+                            console.log(base64img)
+                            localStorage.setItem('garment', base64img)
+                            localStorage.setItem('category',collections[index].type)
+                        }
+                        reader.readAsDataURL(blob)
+                    } catch (error) {
+                        console.error("Path not found",error)
+                    }
+                }
+                fetchImage(path)
                 nav('/capture')
             }
+            
         }
     }
     useEffect(() => { changePic(gesture) }, [gesture])
