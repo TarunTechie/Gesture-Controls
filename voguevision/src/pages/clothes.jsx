@@ -94,7 +94,8 @@ export default function Clothes() {
                             const base64img = reader.result
                             console.log(base64img)
                             localStorage.setItem('garment', base64img)
-                            localStorage.setItem('category',collections[index].type)
+                            localStorage.setItem('type',collections[index].type)
+                            localStorage.setItem('cloth_id',collections[index].id)
                         }
                         reader.readAsDataURL(blob)
                     } catch (error) {
