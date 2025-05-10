@@ -11,7 +11,6 @@ export default function App() {
   
   useEffect(() => {
     if (gesture.length>0) {
-      localStorage.clear('cart')
       setCounter(1)
     }
     if (counter > 0)
