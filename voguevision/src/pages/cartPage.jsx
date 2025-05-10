@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useContext } from 'react';
 import { MenCollections, WomenCollection } from '../constants/collections';
 import Header from '../components/header';
 import Loader from '../components/loader';
 import GestureGuide from '../components/GestureGuide';
 import { useNavigate } from 'react-router-dom';
+import { Broadcast } from '../components/broadcaster';
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-
+  const{gesture,setGesture}=useContext(Broadcast)
   // Define the gestures for this page
   const pageGestures = {
     back: {
@@ -68,6 +69,16 @@ const CartPage = () => {
     return cartItems.reduce((total, item) => total + item.price, 0);
   };
 
+  useEffect(() => {
+    if (gesture.gesture != null)
+    {
+      if (gesture.gesture === 'thumbs_up')
+      {
+        localStorage.clear('cart')
+        navigate('/')
+      }
+    }
+  },[gesture])
   return (
     <div className="h-screen bg-[#210632] flex flex-col overflow-hidden">
       <Header heading="CART" />
