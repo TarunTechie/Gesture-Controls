@@ -35,6 +35,7 @@ export default function TryOn() {
     try {
       const result = await tryonApi.post('/run', JSON.stringify(tosend))
       nav('/output', { state: { id: result.data.id } })
+      localStorage.setItem('resId',result.data.id)
     } catch (error) {
       console.error(error)
     }

@@ -81,7 +81,7 @@ const CartPage = () => {
         localStorage.clear('cart')
         navigate('/')
       }
-      if (gesture.gesture === 'cart')
+      if (gesture.gesture === 'victory')
       {
         navigate('/categories')
       }

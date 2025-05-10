@@ -45,9 +45,6 @@ export default function Header({ heading }) {
           <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
           <div className="relative flex items-center justify-center bg-white/30 hover:bg-white/40 backdrop-blur-md border-2 border-white/60 rounded-full w-12 h-12 p-2 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-purple-500/40">
             <ShoppingCart className="text-white" size={24} />
-            <div className="absolute -top-1 -right-1 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-              {localStorage.getItem('cart')==undefined?0:localStorage.getItem('cart').split(',').length}
-            </div>
           </div>
         </div>
       </div>

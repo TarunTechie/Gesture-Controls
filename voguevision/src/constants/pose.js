@@ -54,18 +54,18 @@ function getGesture(landmarks)
             }
         })
 
-        if (gesture.gestures.length > 0)
-        {
-            return gesture.gestures[0].name
-        }
-        if ((opened.length===3)&&(opened.includes("middle")&&opened.includes("ring")&&opened.includes("little")))
-        {
-            return "super"
-        }
-        if ((opened.length === 3) && (opened.includes("index") && opened.includes("little") && opened.includes('thumb')))
-        {
-            return "cart"
-        }
+        if ((opened.length===1)&&(opened.includes("index")))
+            {
+                return "super"
+            }
+            if ((opened.length === 3) && (opened.includes("index") && opened.includes("little") && opened.includes('thumb')))
+                {
+                    return "cart"
+                }
+                if (gesture.gestures.length > 0)
+                {
+                    return gesture.gestures[0].name
+                }
         else
         {
             return null    

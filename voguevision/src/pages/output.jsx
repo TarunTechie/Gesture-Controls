@@ -10,6 +10,7 @@ export default function Output() {
     const [image, setImage] = useState(null)
     const [loading, setLoading] = useState(true)
     const [showToast, setShowToast] = useState(false)
+    const [status,setStatus]=useState('')
     const [toastMessage, setToastMessage] = useState("")
     const location = useLocation()
     const navigate = useNavigate()
@@ -83,13 +84,15 @@ export default function Output() {
     }, [gesture])
     
     async function getImage() {
+        const resId=localStorage.getItem('resId')
         try {
-            const result = await tryonApi.get(`/status/${id}`)
+            const result = await tryonApi.get(`/status/${resId}`)
             if (result.data.status === 'completed') {
                 setImage(result.data.output[0])
                 setLoading(false)
             } else {
                 // Add a timeout to prevent infinite rapid calls
+                setStatus(result.data.status)
                 setTimeout(() => {
                     getImage()
                 }, 1000)
@@ -119,7 +122,10 @@ export default function Output() {
             </div>
             
             {loading ? (
-                <Loader />
+                <div>
+                    <h1 className="text-xl text-white text-center">{status}</h1>
+                    <Loader />
+                </div>
             ) : (
                 <div className="flex-1 flex flex-col items-center justify-center px-4 overflow-hidden py-2">
                     <div className="w-full max-w-7xl">
@@ -201,8 +207,8 @@ export default function Output() {
                                 className="flex items-center gap-2 bg-[#7E8ABA] hover:bg-[#8E9ACA] text-white px-6 py-2 rounded-full transition-colors duration-300 shadow-lg"
                             >
                                 <img 
-                                    src="./gesture_icon/thumbsUp.svg" 
-                                    className="h-5 w-5" 
+                                    src="./gesture_icon/open_cart.svg" 
+                                    className="h-10 w-10" 
                                     alt="Thumbs up"
                                     style={{ filter: 'invert(100%)' }}
                                 />
@@ -214,8 +220,8 @@ export default function Output() {
                                 className="flex items-center gap-2 bg-[#3c2e58] hover:bg-[#4d3b6e] text-white px-6 py-2 rounded-full transition-colors duration-300 shadow-lg border border-purple-500/30"
                             >
                                 <img 
-                                    src="./gesture_icon/open_cart.svg" 
-                                    className="h-5 w-5" 
+                                    src="./gesture_icon/gotoCart.svg" 
+                                    className="h-10 w-10" 
                                     alt="Cart"
                                     style={{ filter: 'invert(100%)' }}
                                 />
