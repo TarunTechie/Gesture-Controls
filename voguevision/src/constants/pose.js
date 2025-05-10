@@ -47,7 +47,7 @@ function getGesture(landmarks)
             }
             else
             {
-                if (landmarks[tips][1] < landmarks[tips -2][1])
+                if (landmarks[tips][1] < landmarks[tips -2][1] -20)
                 {
                     opened.push(finger_name[index])
                 }

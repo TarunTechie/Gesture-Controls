@@ -23,10 +23,6 @@ export default function Gender() {
             icon: "./gesture_icon/back.svg",
             action: "Go Back"
         },
-        opencart: {
-            icon: "./gesture_icon/open_cart.svg",
-            action: "Open Cart"
-        },
         rightHand: {
             icon: "./gesture_icon/rightHand.svg",
             action: "Select Male"

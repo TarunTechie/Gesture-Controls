@@ -35,7 +35,11 @@ export default function Clothes() {
         rightHand: {
             icon: "./gesture_icon/rightHand.svg",
             action: "Next"
-        }
+        },
+        opencart: {
+            icon: "./gesture_icon/gotoCart.svg",
+            action: "Open Cart"
+        },
     }
     
     // Function to show toast notification

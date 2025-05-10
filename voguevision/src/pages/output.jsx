@@ -22,9 +22,9 @@ export default function Output() {
             icon: "./gesture_icon/thumbsUp.svg",
             action: "Add to Cart"
         },
-        open_cart: {
-            icon: "./gesture_icon/open_cart.svg",
-            action: "Go to Cart"
+        opencart: {
+            icon: "./gesture_icon/gotoCart.svg",
+            action: "Open Cart"
         },
         back: {
             icon: "./gesture_icon/back.svg",

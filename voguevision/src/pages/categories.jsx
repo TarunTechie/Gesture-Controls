@@ -18,15 +18,11 @@ export default function Categories() {
     const pageGestures = {
         leftHand: {
             icon: "./gesture_icon/leftHand.svg",
-            action: "Select Female"
+            action: "Move Left"
         },
         back: {
             icon: "./gesture_icon/back.svg",
             action: "Go Back"
-        },
-        opencart: {
-            icon: "./gesture_icon/open_cart.svg",
-            action: "Open Cart"
         },
         thumbsup: {
             icon: "./gesture_icon/thumbsUp.svg",
@@ -34,7 +30,7 @@ export default function Categories() {
         },
         rightHand: {
             icon: "./gesture_icon/rightHand.svg",
-            action: "Select Male"
+            action: "Move Right"
         }
     }
     

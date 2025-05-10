@@ -20,7 +20,11 @@ const CartPage = () => {
     thumbsUp: {
       icon: "./gesture_icon/thumbsUp.svg",
       action: "Checkout"
-    }
+    },
+    opencart: {
+            icon: "./gesture_icon/gotoCart.svg",
+            action: "Try On More"
+        },
   };
 
   useEffect(() => {
@@ -77,6 +81,10 @@ const CartPage = () => {
         localStorage.clear('cart')
         navigate('/')
       }
+      if (gesture.gesture === 'cart')
+      {
+        navigate('/categories')
+      }
     }
   },[gesture])
   return (
@@ -101,7 +109,7 @@ const CartPage = () => {
             {cartItems.length === 0 ? (
               <div className="bg-[#3c2e58]/80 backdrop-blur-md rounded-xl p-12 text-center">
                 <img 
-                  src="./gesture_icon/open_cart.svg" 
+                  src="./icons/emptyCart.svg" 
                   className="w-16 h-16 mx-auto" 
                   alt="Empty Cart"
                   style={{ filter: 'invert(100%)' }}
